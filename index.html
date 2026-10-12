@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5dce4">
+  <title>Closet Girl | Your Wardrobe, Your Style</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar" id="sidebar">
+      <a href="#inicio" class="brand">
+        <span class="brand-icon">୨୧</span>
+        <span>
+          <strong>CLOSET GIRL</strong>
+          <small>YOUR WARDROBE, YOUR STYLE</small>
+        </span>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-link active" data-page="inicio">
+          <span>⌂</span> Início
+        </a>
+        <a href="#guarda-roupa" class="nav-link" data-page="guarda-roupa">
+          <span>♧</span> Meu guarda-roupa
+        </a>
+        <a href="#montar-look" class="nav-link" data-page="montar-look">
+          <span>✧</span> Montar look
+        </a>
+        <a href="#looks-salvos" class="nav-link" data-page="looks-salvos">
+          <span>♡</span> Looks salvos
+        </a>
+        <a href="#ocasioes" class="nav-link" data-page="ocasioes">
+          <span>♧</span> Ocasiões
+        </a>
+        <a href="#estatisticas" class="nav-link" data-page="estatisticas">
+          <span>▥</span> Estatísticas
+        </a>
+      </nav>
+
+      <div class="sidebar-quote">
+        <p>“Style is a way to say who you are without having to speak.”</p>
+        <span>— Your fashion diary ♡</span>
+      </div>
+
+      <div class="sidebar-bottom">
+        <span>✦ A LITTLE GLAM EVERY DAY ✦</span>
+      </div>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+
+      <!-- CABEÇALHO -->
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          ☰
+        </button>
+
+        <div class="breadcrumb">
+          CLOSET GIRL <span>/</span> <strong id="currentPageName">Início</strong>
+        </div>
+
+        <div class="topbar-actions">
+          <label class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="globalSearch"
+              placeholder="Buscar peça ou look..."
+              aria-label="Buscar peças e looks"
+            >
+          </label>
+
+          <button class="icon-button" id="profileButton" aria-label="Perfil">
+            ♡
+          </button>
+        </div>
+      </header>
+
+      <!-- PÁGINA INICIAL -->
+      <section class="page active" id="inicio" data-title="Início">
+
+        <section class="hero">
+          <div class="hero-overlay"></div>
+
+          <div class="hero-content">
+            <span class="eyebrow">YOUR PERSONAL FASHION DIARY ✦</span>
+            <h1>Seu closet,<br><em>infinitas possibilidades.</em></h1>
+            <p>
+              Organize suas peças, descubra novas combinações
+              e vista-se como a protagonista da sua própria história.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#montar-look" class="button button-primary">
+                ✧ Montar meu look
+              </a>
+              <a href="#guarda-roupa" class="button button-light">
+                Ver meu closet
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-signature">
+            XOXO,<br>Closet Girl ♡
+          </div>
+        </section>
+
+        <!-- RESUMO -->
+        <div class="stats-grid">
+          <article class="stat-card">
+            <div class="stat-icon">♧</div>
+            <span>Total de peças</span>
+            <strong id="totalPieces">0</strong>
+            <small>no seu guarda-roupa</small>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon">♡</div>
+            <span>Looks salvos</span>
+            <strong id="totalLooks">0</strong>
+            <small>combinações favoritas</small>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon">✧</div>
+            <span>Novas combinações</span>
+            <strong id="totalCombinations">0</strong>
+            <small>looks que pode explorar</small>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon">♕</div>
+            <span>Seu estilo</span>
+            <strong class="style-stat" id="favoriteStyle">It Girl</strong>
+            <small>protagonista energy</small>
+          </article>
+        </div>
+
+        <!-- ACESSO RÁPIDO -->
+        <section class="panel quick-panel">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">LET'S GET STYLED</span>
+              <h2>O que vamos fazer hoje?</h2>
+              <p>Seu próximo look favorito tá a alguns cliques de distância.</p>
+            </div>
+          </div>
+
+          <div class="quick-grid">
+            <a href="#guarda-roupa" class="quick-card">
+              <span class="quick-icon">♧</span>
+              <strong>Adicionar peças</strong>
+              <small>Registre roupas, sapatos e acessórios.</small>
+              <span class="quick-arrow">↗</span>
+            </a>
+
+            <a href="#montar-look" class="quick-card">
+              <span class="quick-icon">✧</span>
+              <strong>Montar um look</strong>
+              <small>Combine as peças que já tem.</small>
+              <span class="quick-arrow">↗</span>
+            </a>
+
+            <a href="#looks-salvos" class="quick-card">
+              <span class="quick-icon">♡</span>
+              <strong>Meus favoritos</strong>
+              <small>Reveja suas combinações preferidas.</small>
+              <span class="quick-arrow">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- LOOKS RECENTES -->
+        <section class="panel">
+          <div class="section-heading heading-inline">
+            <div>
+              <span class="eyebrow">YOUR STYLE, YOUR RULES</span>
+              <h2>Seus looks</h2>
+              <p>As combinações que foram salvas por aqui.</p>
+            </div>
+            <a href="#looks-salvos" class="text-link">Ver todos ↗</a>
+          </div>
+
+          <div class="looks-grid" id="recentLooks">
+            <div class="empty-state">
+              <span>♡</span>
+              <h3>Seu próximo look icônico começa aqui</h3>
+              <p>Adicione peças ao closet e salve as combinações favoritas.</p>
+              <a href="#guarda-roupa" class="button button-primary">
+                Começar meu closet
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- MEU GUARDA-ROUPA -->
+      <section class="page" id="guarda-roupa" data-title="Meu guarda-roupa">
+        <div class="page-heading">
+          <span class="eyebrow">YOUR PERSONAL COLLECTION ✦</span>
+          <h1>Meu <em>guarda-roupa.</em></h1>
+          <p>Todas as suas peças favoritas em um só lugar.</p>
+        </div>
+
+        <section class="panel">
+          <div class="section-heading heading-inline">
+            <div>
+              <h2>Adicionar uma peça</h2>
+              <p>Cadastre roupas, calçados, bolsas e acessórios.</p>
+            </div>
+            <span class="decorative-mark">୨୧</span>
+          </div>
+
+          <form id="pieceForm" class="form-grid">
+            <div class="form-group">
+              <label for="pieceName">Nome da peça *</label>
+              <input
+                type="text"
+                id="pieceName"
+                name="pieceName"
+                placeholder="Ex.: Blazer preto"
+                maxlength="70"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="pieceCategory">Categoria *</label>
+              <select id="pieceCategory" name="pieceCategory" required>
+                <option value="">Escolha uma categoria</option>
+                <option value="blusas">Blusas e tops</option>
+                <option value="calcas">Calças</option>
+                <option value="saias">Saias</option>
+                <option value="vestidos">Vestidos</option>
+                <option value="casacos">Casacos e blazers</option>
+                <option value="sapatos">Sapatos</option>
+                <option value="bolsas">Bolsas</option>
+                <option value="acessorios">Acessórios</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pieceColor">Cor principal *</label>
+              <select id="pieceColor" name="pieceColor" required>
+                <option value="">Escolha uma cor</option>
+                <option value="preto">Preto</option>
+                <option value="branco">Branco</option>
+                <option value="off-white">Off-white</option>
+                <option value="rosa">Rosa</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="azul">Azul</option>
+                <option value="jeans">Jeans</option>
+                <option value="bege">Bege</option>
+                <option value="marrom">Marrom</option>
+                <option value="cinza">Cinza</option>
+                <option value="verde">Verde</option>
+                <option value="dourado">Dourado</option>
+                <option value="estampado">Estampado</option>
+                <option value="outra">Outra</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pieceStyle">Estilo</label>
+              <select id="pieceStyle" name="pieceStyle">
+                <option value="classico">Clássico</option>
+                <option value="old-money">Old money</option>
+                <option value="coquette">Coquette</option>
+                <option value="glam">Glamourosa</option>
+                <option value="casual-chic">Casual chic</option>
+                <option value="preppy">Preppy / patricinha</option>
+                <option value="streetwear">Streetwear</option>
+                <option value="romantico">Romântico</option>
+                <option value="minimalista">Minimalista</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pieceSeason">Estação</label>
+              <select id="pieceSeason" name="pieceSeason">
+                <option value="todas">Todas as estações</option>
+                <option value="verao">Verão</option>
+                <option value="outono">Outono</option>
+                <option value="inverno">Inverno</option>
+                <option value="primavera">Primavera</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pieceImage">Foto da peça</label>
+              <input
+                type="file"
+                id="pieceImage"
+                name="pieceImage"
+                accept="image/*"
+              >
+              <small class="field-help">Escolha uma foto do celular ou computador.</small>
+              <div id="pieceImagePreview" class="image-preview"></div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="pieceNotes">Observações</label>
+              <textarea
+                id="pieceNotes"
+                name="pieceNotes"
+                rows="2"
+                placeholder="Ex.: fica linda com acessórios dourados..."
+                maxlength="300"
+              ></textarea>
+            </div>
+
+            <div class="form-actions full-width">
+              <button type="reset" class="button button-outline" id="resetPieceForm">
+                Limpar
+              </button>
+              <button type="submit" class="button button-primary">
+                + Adicionar ao closet
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading heading-inline">
+            <div>
+              <h2>Suas peças</h2>
+              <p id="wardrobeCount">0 peças cadastradas.</p>
+            </div>
+          </div>
+
+          <div class="filters">
+            <div class="form-group">
+              <label for="filterCategory">Categoria</label>
+              <select id="filterCategory">
+                <option value="todas">Todas as categorias</option>
+                <option value="blusas">Blusas e tops</option>
+                <option value="calcas">Calças</option>
+                <option value="saias">Saias</option>
+                <option value="vestidos">Vestidos</option>
+                <option value="casacos">Casacos e blazers</option>
+                <option value="sapatos">Sapatos</option>
+                <option value="bolsas">Bolsas</option>
+                <option value="acessorios">Acessórios</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="filterColor">Cor</label>
+              <select id="filterColor">
+                <option value="todas">Todas as cores</option>
+                <option value="preto">Preto</option>
+                <option value="branco">Branco</option>
+                <option value="rosa">Rosa</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="azul">Azul</option>
+                <option value="jeans">Jeans</option>
+                <option value="bege">Bege</option>
+                <option value="marrom">Marrom</option>
+                <option value="cinza">Cinza</option>
+                <option value="verde">Verde</option>
+                <option value="dourado">Dourado</option>
+                <option value="estampado">Estampado</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="wardrobeSearch">Buscar</label>
+              <input
+                type="search"
+                id="wardrobeSearch"
+                placeholder="Nome da peça..."
+              >
+            </div>
+          </div>
+
+          <div class="pieces-grid" id="piecesGrid">
+            <div class="empty-state">
+              <span>♧</span>
+              <h3>Seu closet começa com uma peça</h3>
+              <p>Adicione suas roupas pra começar a montar combinações.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- MONTAR LOOK -->
+      <section class="page" id="montar-look" data-title="Montar look">
+        <div class="page-heading">
+          <span class="eyebrow">TODAY'S MAIN CHARACTER ✦</span>
+          <h1>Vamos montar um <em>look?</em></h1>
+          <p>Combinações feitas com as peças cadastradas no teu closet.</p>
+        </div>
+
+        <section class="panel">
+          <div class="section-heading">
+            <h2>Qual é a ocasião?</h2>
+            <p>Escolhe o clima do look pra receber sugestões mais certeiras.</p>
+          </div>
+
+          <form id="outfitForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="outfitOccasion">Ocasião</label>
+                <select id="outfitOccasion" required>
+                  <option value="casual">Passeio / dia a dia</option>
+                  <option value="escola">Escola / faculdade</option>
+                  <option value="trabalho">Trabalho</option>
+                  <option value="jantar">Jantar especial</option>
+                  <option value="festa">Festa / balada</option>
+                  <option value="encontro">Encontro</option>
+                  <option value="evento">Evento elegante</option>
+                  <option value="confortavel">Dia confortável</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="outfitStyle">Vibe desejada</label>
+                <select id="outfitStyle">
+                  <option value="todos">Surpreenda-me</option>
+                  <option value="preppy">Blair Waldorf / preppy</option>
+                  <option value="glam">Serena / glamourosa</option>
+                  <option value="old-money">Old money</option>
+                  <option value="coquette">Coquette</option>
+                  <option value="casual-chic">Casual chic</option>
+                  <option value="classico">Clássica</option>
+                  <option value="romantico">Romântica</option>
+                  <option value="minimalista">Minimalista</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="outfitWeather">Clima</label>
+                <select id="outfitWeather">
+                  <option value="qualquer">Qualquer clima</option>
+                  <option value="quente">Calor</option>
+                  <option value="ameno">Clima ameno</option>
+                  <option value="frio">Frio</option>
+                  <option value="chuva">Chuva</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="outfitColor">Paleta de cores</label>
+                <select id="outfitColor">
+                  <option value="todas">Sem preferência</option>
+                  <option value="neutras">Neutras</option>
+                  <option value="rosas">Tons de rosa</option>
+                  <option value="escuras">Tons escuros</option>
+                  <option value="claras">Tons claros</option>
+                  <option value="terrosas">Tons terrosos</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="button button-primary">
+                ✧ Criar meu look
+              </button>
+              <button type="button" class="button button-outline" id="clearOutfit">
+                Limpar seleção
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel outfit-result-panel">
+          <div class="section-heading heading-inline">
+            <div>
+              <span class="eyebrow">YOUR NEXT ICONIC LOOK</span>
+              <h2>O look escolhido</h2>
+              <p id="outfitResultDescription">
+                Tuas próximas combinações vão aparecer aqui.
+              </p>
+            </div>
+            <span class="decorative-mark">♡</span>
+          </div>
+
+          <div id="outfitResult" class="outfit-result">
+            <div class="empty-state">
+              <span>✧</span>
+              <h3>Hora de brincar de stylist</h3>
+              <p>Escolhe a ocasião e clica em “Criar meu look”.</p>
+            </div>
+          </div>
+
+          <div id="outfitActions" class="form-actions hidden">
+            <button type="button" class="button button-primary" id="saveOutfit">
+              ♡ Salvar look
+            </button>
+            <button type="button" class="button button-outline" id="regenerateOutfit">
+              ↻ Outra combinação
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <!-- LOOKS SALVOS -->
+      <section class="page" id="looks-salvos" data-title="Looks salvos">
+        <div class="page-heading">
+          <span class="eyebrow">THE HALL OF FAME ♡</span>
+          <h1>Meus <em>looks favoritos.</em></h1>
+          <p>Combinações salvas pra nunca faltar inspiração.</p>
+        </div>
+
+        <section class="panel">
+          <div class="section-heading">
+            <h2>Minha coleção de looks</h2>
+            <p>Todos os looks que tu decidir guardar.</p>
+          </div>
+
+          <div class="looks-grid" id="savedLooksGrid">
+            <div class="empty-state">
+              <span>♡</span>
+              <h3>Nenhum look salvo ainda</h3>
+              <p>Monta uma combinação e salva as tuas favoritas.</p>
+              <a href="#montar-look" class="button button-primary">
+                Montar meu primeiro look
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- OCASIÕES -->
+      <section class="page" id="ocasioes" data-title="Ocasiões">
+        <div class="page-heading">
+          <span class="eyebrow">DRESSED FOR THE MOMENT ✦</span>
+          <h1>Looks para cada <em>ocasião.</em></h1>
+          <p>Inspiração pra cada momento da tua rotina.</p>
+        </div>
+
+        <div class="occasion-grid">
+          <button type="button" class="occasion-card" data-occasion="escola">
+            <span>🎀</span>
+            <strong>Escola / faculdade</strong>
+            <small>Preppy e confortável</small>
+          </button>
+
+          <button type="button" class="occasion-card" data-occasion="trabalho">
+            <span>♕</span>
+            <strong>Trabalho</strong>
+            <small>Elegante e profissional</small>
+          </button>
+
+          <button type="button" class="occasion-card" data-occasion="jantar">
+            <span>🥂</span>
+            <strong>Jantar especial</strong>
+            <small>Clássico e sofisticado</small>
+          </button>
+
+          <button type="button" class="occasion-card" data-occasion="festa">
+            <span>✧</span>
+            <strong>Festa / balada</strong>
+            <small>Glam e protagonista</small>
+          </button>
+
+          <button type="button" class="occasion-card" data-occasion="casual">
+            <span>♡</span>
+            <strong>Passeio</strong>
+            <small>Casual chic</small>
+          </button>
+
+          <button type="button" class="occasion-card" data-occasion="encontro">
+            <span>🌹</span>
+            <strong>Encontro</strong>
+            <small>Romântico na medida</small>
+          </button>
+
+          <button type="button" class="occasion-card" data-occasion="evento">
+            <span>💎</span>
+            <strong>Evento elegante</strong>
+            <small>Seu momento de brilhar</small>
+          </button>
+
+          <button type="button" class="occasion-card" data-occasion="confortavel">
+            <span>☁</span>
+            <strong>Dia confortável</strong>
+            <small>Estilo sem esforço</small>
+          </button>
+        </div>
+      </section>
+
+      <!-- ESTATÍSTICAS -->
+      <section class="page" id="estatisticas" data-title="Estatísticas">
+        <div class="page-heading">
+          <span class="eyebrow">A LITTLE CLOSET RECAP ✦</span>
+          <h1>Seu closet em <em>números.</em></h1>
+          <p>Descobre como tuas peças estão distribuídas.</p>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span>Total de peças</span>
+            <strong id="statPieces">0</strong>
+            <small>peças cadastradas</small>
+          </article>
+
+          <article class="stat-card">
+            <span>Looks salvos</span>
+            <strong id="statLooks">0</strong>
+            <small>combinações favoritas</small>
+          </article>
+
+          <article class="stat-card">
+            <span>Categoria favorita</span>
+            <strong id="statCategory">—</strong>
+            <small>categoria com mais peças</small>
+          </article>
+
+          <article class="stat-card">
+            <span>Cor mais comum</span>
+            <strong id="statColor">—</strong>
+            <small>cor predominante</small>
+          </article>
+        </div>
+
+        <section class="panel">
+          <div class="section-heading">
+            <h2>Distribuição do closet</h2>
+            <p>Veja quantas peças existem em cada categoria.</p>
+          </div>
+          <div id="categoryStatistics" class="statistics-list">
+            <div class="empty-state">
+              <span>♧</span>
+              <p>As estatísticas aparecem quando houver peças cadastradas.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- RODAPÉ -->
+      <footer class="footer">
+        <a href="#inicio" class="footer-brand">୨୧ CLOSET GIRL</a>
+        <span>Organize <b>•</b> Combine <b>•</b> Arrase</span>
+        <span class="footer-signature">XOXO, Closet Girl ♡</span>
+      </footer>
+
+    </main>
+  </div>
+
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Confirmações e mensagens -->
+  <dialog id="confirmDialog" class="confirm-dialog">
+    <form method="dialog">
+      <h2 id="confirmTitle">Só um minutinho!</h2>
+      <p id="confirmMessage">Deseja continuar?</p>
+      <div class="form-actions">
+        <button value="cancel" class="button button-outline">Cancelar</button>
+        <button value="confirm" class="button button-primary">Confirmar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
